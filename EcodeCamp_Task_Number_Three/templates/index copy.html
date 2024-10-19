@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Breat Cancer Prediction</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Breast Cancer Prediction</h1>
+
+        <form action="" method="post" >
+            {{ form.hidden_tag() }}
+            <!-- 1 -->
+             
+            <div>
+                {{ form.texture_mean.label }}
+                {{ form.texture_mean }}
+            </div>
+            <!-- 2 -->
+            <div>
+                {{ form.smoothness_mean.label }}
+                {{ form.smoothness_mean }}
+            </div>
+            <!-- 3 -->
+            <div>
+                {{ form.compactness_mean.label }}
+                {{ form.compactness_mean }}
+            </div>
+            <!-- 4 -->
+            <div>
+                {{ form.concave_points_mean.label }}
+                {{ form.concave_points_mean }}
+            </div>
+            <!-- 5 -->
+            <div>
+                {{ form.symmetry_mean.label }}
+                {{ form.symmetry_mean }}
+            </div>
+            <!-- 6 -->
+            <div>
+                {{ form.fractal_dimension_mean.label }}
+                {{ form.fractal_dimension_mean }}
+            </div>
+            <!-- 7 -->
+            <div>
+                {{ form.texture_se.label }}
+                {{ form.texture_se }}
+            </div>
+            <!-- 8 -->
+            <div>
+                {{ form.area_se.label }}
+                {{ form.area_se }}
+            </div>
+            <!-- 9 -->
+            <div>
+                {{ form.smoothness_se.label }}
+                {{ form.smoothness_se }}
+            </div>
+            <!-- 10 -->
+            <div>
+                {{ form.compactness_se.label }}
+                {{ form.compactness_se }}
+            </div>
+            <!-- 11 -->
+            <div>
+                {{ form.concavity_se.label }}
+                {{ form.concavity_se }}
+            </div>
+            <!-- 12 -->
+            
+            <div>
+                {{ form.concave_points_se.label }}
+                {{ form.concave_points_se }}
+            </div>
+            <!-- 13 -->
+            <div>
+                {{ form.symmetry_se.label }}
+                {{ form.symmetry_se }}
+            </div>
+            <!-- 14 -->
+            <div>
+                {{ form.fractal_dimension_se.label }}
+                {{ form.fractal_dimension_se }}
+            </div>
+            <!-- 15 -->
+            <div>
+                {{ form.texture_worst.label }}
+                {{ form.texture_worst }}
+            </div>
+            <!-- 16 -->
+            
+            <div>
+                {{ form.area_worst.label }}
+                {{ form.area_worst }}
+            </div>
+            <!-- 17 -->
+            <div>
+                {{ form.smoothness_worst.label }}
+                {{ form.smoothness_worst }}
+            </div>
+            <!-- 18 -->
+            <div>
+                {{ form.compactness_worst.label }}
+                {{ form.compactness_worst }}
+            </div>
+            <!-- 19 -->
+            <div>
+                {{ form.concavity_worst.label }}
+                {{ form.concavity_worst }}
+            </div>
+            <!-- 20 -->
+            <div>
+                {{ form.concave_points_worst.label }}
+                {{ form.concave_points_worst }}
+            </div>
+            <!-- 21 -->
+            <div>
+                {{ form.symmetry_worst.label }}
+                {{ form.symmetry_worst }}
+            </div>
+            <!-- 22 -->
+            <div>
+                {{ form.fractal_dimension_worst.label }}
+                {{ form.fractal_dimension_worst }}
+            </div>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+        <div>
+            {% if result %}
+                <h2>Prediction: {{ result }}</h2>
+            {% endif %}
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
