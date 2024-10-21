@@ -68,22 +68,12 @@ This project predicts stock prices using historical data, employing an **LSTM (L
 - Hyperparameter tuning to optimize model performance, achieving the best RMSE (236.55).
 
 ##### Usage:
-1. Preprocess the stock price data and split it into training and test sets:
-   ```bash
-   python preprocess.py
-   ```
-
-2. Train the LSTM model:
-   ```bash
-   python train.py
-   ```
-
-3. Run the Streamlit web app:
+1. Run the Streamlit web app:
    ```bash
    streamlit run app.py
    ```
 
-4. Open your browser and navigate to the local Streamlit URL to interact with the stock prediction tool.
+2. Open your browser and navigate to the local Streamlit URL to interact with the stock prediction tool.
 
 ### Technologies Used
 - **Python**: The main programming language.
